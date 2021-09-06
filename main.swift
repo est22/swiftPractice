@@ -2,11 +2,11 @@
 Practice1. SignUser
 */
 
-// 변수 선언
+// 변수 선언( 선언 = 초기화 )
 var nickname = "고래밥"
 var age = 33
 let email = "mono@monocoding.com"   // 변하지 않는 상수
-var rate: Double = 4 // 밑의 line 17에서 에러가 나므로 4.0으로 작성하거나 자료형 명시
+var rate: Double = 4 // 밑의 line 17에서 에러가 나므로 4.0으로 작성하거나 자료형 명시(타입 어노테이션)
 var gender = true
 
 print("안녕하세요 \(nickname)입니다. 저는 \(age)살 이고, 이메일은 \(email)입니다. 평점은 \(rate)에요.")   // 블럭 처리 후 괄호(Packaging)
@@ -19,3 +19,20 @@ gender = false
 // email = "test@test.com" -> let으로 선언한 상수는 변경불가.
 
 print("안녕하세요 \(nickname)입니다. 저는 \(age)살 이고, 이메일은 \(email)입니다. 평점은 \(rate)에요.") 
+
+/*
+Practice2. WhoAmI
+*/
+
+let userBirth = 1990
+let day = (2021 - userBirth) * 365
+let rice = day * 3
+
+// print("\(day)") -> 11315
+
+print("""
+저는 태어난 지 100개월로, 
+\(day)일째 살고 있습니다. 지금까지 \(rice)끼를 먹었고, 
+\(day * 8)시간을 잤어요. 
+내년이면 000살이 됩니다.
+""") // 여러줄 작성 : 따옴표 세개 혹은 escape sequence
