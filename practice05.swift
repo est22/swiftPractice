@@ -5,7 +5,7 @@ func reportMovie() {
   // 배
   let genre = ["액션", "로맨스", "SF", "스릴러", "애니메이션", "코미디"]
   let rate = Double.random(in: 1...5)
-디
+
   let randomGenre = genre[Int.random(in: 0...genre.count-1)]
 
   // print(genre.count)
