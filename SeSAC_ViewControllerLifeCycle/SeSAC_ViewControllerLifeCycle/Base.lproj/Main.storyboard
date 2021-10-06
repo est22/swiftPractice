@@ -95,7 +95,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Open Sidemenu"/>
                                 <connections>
-                                    <segue destination="fqz-Wb-d70" kind="presentation" id="YiG-Dt-MRb"/>
+                                    <segue destination="55K-Em-Jh1" kind="show" id="Fue-Nf-iBE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -131,10 +131,13 @@
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="6fH-bw-9nq"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go3-zP-N9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="-1265"/>
+            <point key="canvasLocation" x="3763.7681159420295" y="-1258.2589285714284"/>
         </scene>
         <!--First Tab Detail View Controller-->
         <scene sceneID="BGW-4L-3hU">
@@ -222,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWr-PB-0qy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="749"/>
+            <point key="canvasLocation" x="125" y="828"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ger-tD-bxq">
@@ -261,7 +264,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCh-2e-rs0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-787" y="749"/>
+            <point key="canvasLocation" x="-787" y="828"/>
         </scene>
         <!--Second-->
         <scene sceneID="g6C-3P-Nwq">
@@ -381,17 +384,17 @@
             <objects>
                 <viewController id="rPg-UN-SWt" customClass="ThirdTabDetailViewController" customModule="SeSAC_ViewControllerLifeCycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="37m-Cm-uhE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ThirdTab Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyL-aX-Jfn">
-                                <rect key="frame" x="47.5" y="418" width="319" height="60"/>
+                                <rect key="frame" x="47.5" y="391" width="319" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qv-ix-LxW">
-                                <rect key="frame" x="50" y="94" width="314" height="50"/>
+                                <rect key="frame" x="50" y="50" width="314" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rAc-Tw-Mwh"/>
                                 </constraints>
@@ -426,30 +429,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dym-b0-LCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ML7-M9-ja0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1034.7826086956522" y="748.66071428571422"/>
+            <point key="canvasLocation" x="1035" y="828"/>
         </scene>
         <!--Side Menu Navigation Controller-->
-        <scene sceneID="e7V-JG-7Kw">
+        <scene sceneID="Sel-TQ-tCA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fqz-Wb-d70" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pfm-7H-u8p" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="XrP-Nn-vW0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Ee-Hp-bb3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationItem key="navigationItem" id="KiY-N3-aUp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e3x-N4-0qs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="55K-Em-Jh1" kind="relationship" relationship="rootViewController" id="BDr-9K-0xv"/>
-                    </connections>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H2V-bN-LbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjX-La-Dp8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="-1266"/>
+            <point key="canvasLocation" x="2853.6231884057975" y="-1258.2589285714284"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="gnp-TV-9kC">
+            <size key="intrinsicContentSize" width="129.5" height="18.5"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="MAu-DO-j3m"/>
+        <segue reference="2MM-eT-rag"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1.circle" catalog="system" width="128" height="121"/>
