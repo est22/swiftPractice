@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SESAC_WEEK6
+
+  Created by Lia AN on 2021/11/01.
+  
+*/
+"tab_home" = "HOME";
+"tab_setting" = "Settings";
+
+"welcome_text" = "Hello! Nice to meet you";
