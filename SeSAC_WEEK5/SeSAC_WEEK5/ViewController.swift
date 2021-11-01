@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     func getCurrentWeather() {
         
-        let url = "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=11a4696be727d48a6f2557060dc90e6a"
+        let url = "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=#####"
         
         AF.request(url, method: .get).validate().responseJSON { response in
             
